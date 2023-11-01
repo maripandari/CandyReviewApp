@@ -11,7 +11,7 @@ class ViewController02: UIViewController,UITableViewDataSource, UITableViewDeleg
     
     var gummiesArray = ["Haribo Goldbears", "Trolli Sour Crawlers", "Meiju Kaju Mikan", "Kasugai Strawberry Gummy"]
     
-    var gummiesRating = ["5 stars", "4 Stars", "5 Star", "5 Star"]
+    var gummiesRating = ["5 Stars", "4 Stars", "5 Stars", "5 Stars"]
     
     
     
