@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C74028582AF45D2B0009FDFB /* secondDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74028572AF45D2B0009FDFB /* secondDetailViewController.swift */; };
+		C740285A2AF45E5D0009FDFB /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = C74028592AF45E5D0009FDFB /* Property List.plist */; };
 		C7653CCA2AF1C01D007FF32D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7653CC92AF1C01D007FF32D /* AppDelegate.swift */; };
 		C7653CCC2AF1C01D007FF32D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7653CCB2AF1C01D007FF32D /* SceneDelegate.swift */; };
 		C7653CCE2AF1C01D007FF32D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7653CCD2AF1C01D007FF32D /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		C74028572AF45D2B0009FDFB /* secondDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondDetailViewController.swift; sourceTree = "<group>"; };
+		C74028592AF45E5D0009FDFB /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		C7653CC62AF1C01D007FF32D /* CandyReviewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CandyReviewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7653CC92AF1C01D007FF32D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7653CCB2AF1C01D007FF32D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				C7653CCD2AF1C01D007FF32D /* ViewController.swift */,
 				C7653CF92AF1D199007FF32D /* ViewController02.swift */,
 				C7653CCF2AF1C01D007FF32D /* Main.storyboard */,
+				C74028592AF45E5D0009FDFB /* Property List.plist */,
 				C74028572AF45D2B0009FDFB /* secondDetailViewController.swift */,
 				C7653CFF2AF1D222007FF32D /* ViewController05.swift */,
 				C7653CFD2AF1D1FD007FF32D /* ViewController04.swift */,
@@ -251,6 +254,7 @@
 			files = (
 				C7653CD62AF1C01F007FF32D /* LaunchScreen.storyboard in Resources */,
 				C7653CD32AF1C01F007FF32D /* Assets.xcassets in Resources */,
+				C740285A2AF45E5D0009FDFB /* Property List.plist in Resources */,
 				C7653CD12AF1C01D007FF32D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
