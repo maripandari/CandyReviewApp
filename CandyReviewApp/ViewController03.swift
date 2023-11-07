@@ -7,7 +7,50 @@
 
 import UIKit
 
-class ViewController03: UIViewController {
+class ViewController03: UIViewController,UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var tableView: UITableView!
+    var chewsArray = ["Hi Chew Mixed", "White Rabbit", "Goetze Caramel Cream", "Starburst"]
+    
+    var chewsRating = ["5 Stars", "5 Stars", "5 Stars", "4 Stars"]
+    
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return chewsArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let text = chewsArray[indexPath.row]
+        cell.detailTextLabel?.text = chewsRating [indexPath.row]
+        cell.textLabel?.text = text
+        return cell
+        
+        
+    }
+    
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+                {
+                    tableView.deselectRow(at: indexPath, animated: true)
+                }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+                if segue.identifier == "mySegue"
+                {
+                    let s1 = segue.destination as! secondDetailViewController
+                    let imageIndex = tableView.indexPathForSelectedRow?.row
+                    s1.imagePass = categoryOneImagesData[imageIndex!]
+                }
+            }
+   
+    var categoryOneImagesData = [String] (
+)
 
     override func viewDidLoad() {
         super.viewDidLoad()

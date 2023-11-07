@@ -21,7 +21,7 @@ class ViewController_featured: UIViewController {
         
         // Do any additional setup after loading the view.
         
-        featuredCandyImage.image = UIImage(named: "HiChew01")
+        featuredCandyImage.image = UIImage(named: "HiChew")
         featuredCandyTitle.text = "Featured Candy: Morinaga Hi Chew"
         featuredCandyTitle.font = UIFont.boldSystemFont(ofSize: 20.0)
         

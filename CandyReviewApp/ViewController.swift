@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         candyBGImage.image = UIImage (named: "CandyBG02")
-        featuredCandyImage.image = UIImage(named: "HiChew01")
+        featuredCandyImage.image = UIImage(named: "HiChew")
         featuredCandyTitle.text = "Featured Candy: Morinaga Hi Chew"
         
         featuredCandyTitle.font = UIFont.boldSystemFont(ofSize: 20.0)
