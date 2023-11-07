@@ -29,11 +29,38 @@ class ViewController04: UIViewController,UITableViewDataSource, UITableViewDeleg
         return cell
     }
     
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+                {
+                    tableView.deselectRow(at: indexPath, animated: true)
+                }
+   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+                if segue.identifier == "mySegue03"
+                {
+                    let s1 = segue.destination as! fourthDetailViewController
+                    let imageIndex = tableView.indexPathForSelectedRow?.row
+                    s1.imagePass = categoryThreeImagesData[imageIndex!]
+                }
+            }
+   
+    var categoryThreeImagesData = [String] (
+)
+
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let path = Bundle.main.path(forResource: "Property List", ofType: "plist")
+         let dict = NSDictionary(contentsOfFile: path!)
+        categoryThreeImagesData = dict!.object(forKey:"CategoryThreeImages") as! [String]
+        
+        
+        
     }
     
 

@@ -41,21 +41,27 @@ class ViewController03: UIViewController,UITableViewDataSource, UITableViewDeleg
                 }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-                if segue.identifier == "mySegue"
+                if segue.identifier == "mySegue02"
                 {
-                    let s1 = segue.destination as! secondDetailViewController
+                    let s1 = segue.destination as! thirdDetailViewController
                     let imageIndex = tableView.indexPathForSelectedRow?.row
-                    s1.imagePass = categoryOneImagesData[imageIndex!]
+                    s1.imagePass = categoryTwoImagesData[imageIndex!]
                 }
             }
    
-    var categoryOneImagesData = [String] (
+    var categoryTwoImagesData = [String] (
 )
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let path = Bundle.main.path(forResource: "Property List", ofType: "plist")
+         let dict = NSDictionary(contentsOfFile: path!)
+        categoryTwoImagesData = dict!.object(forKey:"CategoryTwoImages") as! [String]
+        
+        
     }
     
 
